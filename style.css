@@ -1,0 +1,560 @@
+/*
+Theme Name: BuddyPress Dungeon Play
+Theme URI: http://dungeonplay.net/wp-content/themes/dungeonplay_v3
+Description: Dungeon Play theme for BuddyPress.
+Version: 3.3
+Author: Lassirra
+Author URI: http://dungeonplay.net/
+Template: bp-default
+Tags: buddypress, dungeon play, lassirra
+*/
+
+/* Inherit the default theme styles */
+@import url( ../../plugins/buddypress/bp-themes/bp-default/_inc/css/default.css );
+
+/* Inherit the default theme adminbar styles */
+@import url( ../../plugins/buddypress/bp-themes/bp-default/_inc/css/adminbar.css );
+
+body {
+	background: url('images/deathwing.jpg') top center #000 no-repeat fixed;
+	color: #9d9d9d;
+}
+a {
+	color: #0070ff;
+}
+#wp-admin-bar {
+	background: url('images/top.jpg') repeat-x;
+	height: 25px;
+}
+#wp-admin-bar .padder {
+	background: none;
+	height: 25px;
+}
+
+div#container {
+	background: #212121;
+	border-bottom: none;
+	border-right: none;
+}
+#header {
+	background: url('images/dungeonplay.png') no-repeat !important;
+	margin-top: 55px;
+	height: 250px;
+}
+#header h1 {
+	display: none;
+}
+ul#nav {
+	max-width: 100%;
+	padding: 3px 5px;
+	left: 0px;
+	right: 0px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-topleft:3px;
+	background: url('images/menubg.jpg') repeat-x;
+}
+ul#nav li a {
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft:3px;
+}
+div.post div.post-content, div.comment-content {
+	margin-left: 0px;
+}
+div.post h2.pagetitle, div.post h2.posttitle, h2.pagetitle {
+	font-size: 32px;
+	font-family: Georgia, Times, serif;
+	font-weight: normal;
+	font-style: italic;
+	border-bottom: 1px dotted #111;
+	color: #fed57d;
+}
+div.post h2.pagetitle a, div.post h2.posttitle a, span.posttitle-small a, span.posttitle-index a {
+	color: #fed57d;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+span.posttitle-small {
+	font-size: 12px;
+	font-family: Tahoma, Arial, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	color: #fed57d;
+}
+span.posttitle-index {
+	font-family: Arial, Tahoma, sans-serif;
+	font-weight: normal;
+	font-size: 22px;
+}
+.moretitles {
+	border-bottom: 1px dotted #414141;
+	margin: 1px;
+	padding: 0px 5px;
+}
+div.post p.date, div.post p.postmetadata, div.comment-meta, div.comment-options {
+	border: none;
+}
+div.divider {
+	text-align: center;
+	margin-bottom: 25px;
+}
+div#sidebar {
+	background: none;
+	border: none;
+	border-left: none;
+}
+#sidebar div {
+	padding:  19px 5px;
+}
+#sidebar div div {
+	background: #171717;
+	-moz-border-radius: 3px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+div#sidebar .widget_search {
+	margin-top: 0px;
+}
+div#content .padder {
+	border-right: none;
+}
+div#sidebar h3.widgettitle {
+	background: #111;
+	font-size: 16px;
+	font-family: Georgia, Times, serif;
+	font-weight: normal;
+	font-style: italic;
+	margin: 0px;
+}
+div#sidebar ul {
+	margin-left: 20px;
+}
+div#sidebar ul li {
+	list-style-image: url('images/2.gif') !important;
+	margin-bottom: 2px !important;
+}
+.post-thumbnail {
+	float: left;
+	margin: 0 5px 0 0;
+	padding: 0px;
+	border: 2px solid #383838;
+}
+.post-thumbnail img {
+	margin-bottom: 0px !important;
+}
+div.post {
+	margin: 0 0 25px;
+}
+div.post div.author-box, div.comment-avatar-box {
+	padding: 2px;
+	background: #454545;
+}
+div.post div.author-box img, div.comment-avatar-box img {
+	border: 1px solid #797979;
+}
+div.post blockquote {
+	font-size: 14px;
+	background: #3b3b3b;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-topleft:3px;
+	margin: 10px 65px;
+	padding: 5px;
+}
+div.post h1, div.post h2, div.post h3, div.post h4, div.post h5, div.post h6 {
+	color: #eae68a;
+}
+div.entry-utility {
+	background: #111;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-topleft:3px;
+	font-style: italic;
+	padding: 10px;
+}
+div.entry-single {
+	font-size: 12pt;
+}
+div#comments {
+	background: #111;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-topleft:3px;
+	padding: 5px 10px;
+	margin-bottom: 25px;
+}
+ul.children {
+	margin-left: 35px;
+}
+ul.children li, ol.commentlist li, ul#trackbacklist li {
+	background: #1e1e1e;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-topleft:3px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+div#respond, div#trackbacks {
+	background: #111;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-topleft:3px;
+	padding: 5px;
+}
+div.item-list-tabs {
+	background: #111;
+}
+div.item-list-tabs ul li.selected a, div.item-list-tabs ul li.current a {
+	background: #1e1e1e;
+}
+div#subnav.item-list-tabs {
+	background: #111;
+	border-bottom: 1px solid #1e1e1e;
+}
+span.activity, div#message p {
+	background: #383838;
+	border: none;
+}
+.activity-list .activity-header a:first-child, span.highlight, .activity-list div.activity-meta a.acomment-reply, .activity-list div.activity-meta a {
+	background: #383838;
+	border: none;
+}
+table thead tr {
+	background: #383838 !important;
+}
+table tr.alt {
+	background: #454545 !important;
+}
+table tr.sticky, table.forum tr.sticky td {
+	background: #601f00 !important;
+}
+div.pagination {
+	border-bottom: 1px dotted #111;
+}
+ul.item-list li {
+	border-bottom: 1px solid #383838;
+}
+div#sidebar div.item-options {
+	background: #383838;
+	margin: 2px;
+}
+#footer {
+	text-shadow: none;
+}
+.dk_cat, .dk_cat a:link, .dk_cat a:visited {
+    color: #c41f3b !important;
+    font-family: Georgia, Times, serif;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+}
+.dk_cat a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.dk_cat {
+	background: url('images/icons/IconSmall_Deathknight.gif') left center no-repeat;
+	padding-left: 25px;
+}
+.druid_cat, .druid_cat a:link, .druid_cat a:visited {
+    color: #ff5e14 !important;
+    font-family: Georgia, Times, serif;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+}
+.druid_cat a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.druid_cat {
+	background: url('images/icons/IconSmall_Druid.gif') left center no-repeat;
+	padding-left: 25px;
+}
+.hunter_cat, .hunter_cat a:link, .hunter_cat a:visited {
+    color: #abd473 !important;
+    font-family: Georgia, Times, serif;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+}
+.hunter_cat a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.hunter_cat {
+	background: url('images/icons/IconSmall_Hunter.gif') left center no-repeat;
+	padding-left: 25px;
+}
+.mage_cat, .mage_cat a:link, .mage_cat a:visited {
+    color: #69b1d0 !important;
+    font-family: Georgia, Times, serif;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+}
+.mage_cat a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.mage_cat {
+	background: url('images/icons/IconSmall_Mage.gif') left center no-repeat;
+	padding-left: 25px;
+}
+.paladin_cat, .paladin_cat a:link, .paladin_cat a:visited {
+    color: #f58cba !important;
+    font-family: Georgia, Times, serif;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+}
+.paladin_cat a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.paladin_cat {
+	background: url('images/icons/IconSmall_Paladin.gif') left center no-repeat;
+	padding-left: 25px;
+}
+.priest_cat, .priest_cat a:link, .priest_cat a:visited {
+    color: #ffffff !important;
+    font-family: Georgia, Times, serif;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+}
+.priest_cat a:hover {
+    text-decoration: underline;
+}
+.priest_cat {
+	background: url('images/icons/IconSmall_Priest.gif') left center no-repeat;
+	padding-left: 25px;
+}
+.rogue_cat, .rogue_cat a:link, .rogue_cat a:visited {
+    color: #fff569 !important;
+    font-family: Georgia, Times, serif;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+}
+.rogue_cat a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.rogue_cat {
+	background: url('images/icons/IconSmall_Rogue.gif') left center no-repeat;
+	padding-left: 25px;
+}
+.shaman_cat, .shaman_cat a:link, .shaman_cat a:visited {
+    color: #2459ff !important;
+    font-family: Georgia, Times, serif;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+}
+.shaman_cat a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.shaman_cat {
+	background: url('images/icons/IconSmall_Shaman.gif') left center no-repeat;
+	padding-left: 25px;
+}
+.warlock_cat, .warlock_cat a:link, .warlock_cat a:visited {
+    color: #9482c9 !important;
+    font-family: Georgia, Times, serif;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+}
+.warlock_cat a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.warlock_cat {
+	background: url('images/icons/IconSmall_Warlock.gif') left center no-repeat;
+	padding-left: 25px;
+}
+.warrior_cat, .warrior_cat a:link, .warrior_cat a:visited {
+    color: #c79c6e !important;
+    font-family: Georgia, Times, serif;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+}
+.warrior_cat a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.warrior_cat {
+	background: url('images/icons/IconSmall_Warrior.gif') left center no-repeat;
+	padding-left: 25px;
+}
+.gen_cat, .gen_cat a:link, .gen_cat a:visited {
+    color: #a335ee;
+    font-family: Georgia, Times, serif;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    clear: both;
+}
+.gen_cat a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.catbox {
+	background: #171717;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-topleft:3px;
+	padding: 5px;
+	margin-bottom: 25px;
+	clear: both;
+}
+.catbox-small-left {
+	background: #171717;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-topleft:3px;
+	padding: 5px;
+	width: 100%;
+	float: left;
+	margin-bottom: 25px;
+	clear: left;
+}
+.catbox-small-right {
+	background: #171717;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-topleft:3px;
+	padding: 5px;
+	width: 100%;
+	float: right;
+	margin-bottom: 25px;
+	clear: right;
+}
+.catbox-left {
+	float: left;
+	width: 48%;
+}
+.catbox-right {
+	float: right;
+	width: 48%;
+}
+.catbox, .catbox-small-left, .catbox-small-right {
+	background: url('images/catheadbg.jpg') top repeat-x #171717;
+}
+.navigation {
+	clear: both;
+}
+ul#topic-post-list li.alt {
+	background: #141414;
+}
+body.activity-permalink .activity-list li .activity-content {
+	background: #141414;
+	border-bottom: none;
+	border-right: none;
+}
+body.activity-permalink .activity-list li .activity-header > p {
+	background: none;
+}
+body.activity-permalink ul.item-list li {
+	border-bottom: none;
+}
+a.button, input[type="submit"], input[type="button"], input[type="reset"], ul.button-nav li a, div.generic-button a {
+	background-image: none;
+}
+img.avatar, .activity-list .activity-content img.thumbnail {
+	border: 1px solid #141414;
+}
+body.activity-permalink .activity-list li .activity-content {
+	margin-bottom: 5px;
+}
+div.activity-comments > ul {
+	background: #171717 !important;
+}
+.activity-list li.load-more {
+	background: #141414 !important;
+	border-bottom: none;
+	border-right: none;
+}
+#footer {
+	background: #141414;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-topleft:5px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.footinfo {
+	text-align: left;
+	float: left;
+	width: 226px;
+	padding-right: 20px;
+	border-right: 1px solid #3b3b3b;
+}
+.footlinks {
+	text-align: left;
+	margin-left: 266px;
+}
+.rsslink {
+	float: right;
+}
+.postdate {
+	background: url('images/calendar_view_day.png') no-repeat;
+	padding-left: 20px;
+	margin-right: 10px;
+}
+.postcat {
+	background: url('images/folder.png') no-repeat;
+	padding-left: 20px;
+	margin-right: 10px;
+}
+.postcomments {
+	background: url('images/comments.png') no-repeat;
+	padding-left: 20px;
+	margin-right: 10px;
+}
+.postauthor {
+	background: url('images/user.png') no-repeat;
+	padding-left: 20px;
+	margin-right: 10px;
+}
+div.alt {
+	background: #141414 !important;
+}
+.entry-single ul li, .entry-single ol li {
+	margin-left: 25px;
+}
+form#whats-new-form {
+	margin: 10px 25px;
+}
+ul#activity-stream {
+	margin: 25px;
+}
+.activity ul.item-list {
+	width: 95%;
+}
+.clear {
+	clear: both;
+}
